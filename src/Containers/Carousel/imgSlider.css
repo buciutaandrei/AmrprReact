@@ -1,0 +1,11 @@
+.imgSlide {
+
+	background: linear-gradient( rgba(64, 64, 64, 0.5), rgba(64, 64, 64, 0.5) ), url("image1.jpg");
+	background-size: cover;
+	height: 75vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}

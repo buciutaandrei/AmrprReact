@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import 'semantic-ui-css/semantic.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import 'tachyons';
+import 'font-awesome/css/font-awesome.min.css';
+import Navbar from './Containers/Navbar/Navbar.js'
+import ImgSlider from './Containers/Carousel/imgSlider.js'
+import Thumbnails from "./Containers/Thumbnails/Thumbnails.js";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+  render () {
+  	return (
+		<div>
+	      <Navbar />
+	      <ImgSlider />
+	      <Thumbnails />
+	    </div>
+  )}
 }
 
 export default App;
