@@ -1,4 +1,7 @@
-
+.navigationbar {
+	z-index: 20;
+	background-color: rgba(255,255,255,0.95)
+}
 
 .flex {
   display: flex;

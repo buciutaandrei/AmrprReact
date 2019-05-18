@@ -1,8 +1,8 @@
 import React from 'react';
-import sigla from './sigla.png';
+import './Navbar.css';
 import MeniuDropdown from '../../Components/Dropdown/EvenimenteDropdown.js';
 import CAPDropdown from '../../Components/Dropdown/CAPDropdown.js';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
 class Navigation extends React.Component {
   
@@ -23,9 +23,9 @@ class Navigation extends React.Component {
   render() {
 	  return (
 	  	<div>
-	      <Navbar id='navigationbar' className='fixed-top pv0' color="light" light expand="md">
+	      <Navbar id='navigationbar' className='shadow-3 pv0 fixed-top navigationbar' light expand="md">
 	        <NavbarBrand style={{ display: 'flex', 'align-items': 'center' }}href="/">
-	        	<img src={sigla} height='75px'/>
+	        	<img src={require("./sigla.png")} height='75px' alt='sigla'/>
 	        </NavbarBrand>
 	        <NavbarToggler onClick={this.toggle} />
 	          <Collapse isOpen={this.state.isOpen} navbar>
@@ -50,7 +50,6 @@ class Navigation extends React.Component {
 	            </Nav>
 	          </Collapse>
 	        </Navbar>
-	        <div  style={{'height': '83.6px'}}></div>
 	      </div>
 	  	)
 }}
