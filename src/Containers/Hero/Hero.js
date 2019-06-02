@@ -1,11 +1,10 @@
 import React from 'react';
-import './imgSlider.css';
-import image1 from './image1.jpg';
-import { Container, Button } from 'reactstrap';
+import './Hero.css';
+import { Button } from 'reactstrap';
 import { Parallax } from 'react-scroll-parallax';
 
 
-const ImgSlider = () => {
+const Hero = () => {
 	return (
 		<Parallax className="imgSlide flexCenter" y={[-100, 100]} styleInner={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
 				<h1 className='f1 tc'>AMRPR</h1>
@@ -15,4 +14,4 @@ const ImgSlider = () => {
 		</Parallax>
 )}
 
-export default ImgSlider;
+export default Hero;

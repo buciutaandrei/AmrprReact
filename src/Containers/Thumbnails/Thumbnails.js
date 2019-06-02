@@ -1,7 +1,7 @@
 import React from 'react';
 import './Thumbnails.css';
 import 'tachyons';
-import { Card, Container } from 'reactstrap';
+import { Card } from 'reactstrap';
 import SmallCards from '../../Components/Card/Card.js'
 
 const lista = [

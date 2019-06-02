@@ -11,9 +11,11 @@ class Navigation extends React.Component {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpen: false
+      isOpen: false,
+      height: 0
     };
   }
+
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
@@ -24,7 +26,7 @@ class Navigation extends React.Component {
 	  return (
 	  	<div>
 	      <Navbar id='navigationbar' className='shadow-3 pv0 fixed-top navigationbar' light expand="md">
-	        <NavbarBrand style={{ display: 'flex', 'align-items': 'center' }}href="/">
+	        <NavbarBrand style={{ display: 'flex', alignItems: 'center' }} href="/">
 	        	<img src={require("./sigla.png")} height='75px' alt='sigla'/>
 	        </NavbarBrand>
 	        <NavbarToggler onClick={this.toggle} />
@@ -45,7 +47,7 @@ class Navigation extends React.Component {
 	              </NavItem>
 	              <CAPDropdown />
 	              <NavItem>
-	                <NavLink href="/">Link-uri</NavLink>
+					<NavLink hrf='/'>Link-uri</NavLink>
 	              </NavItem>
 	            </Nav>
 	          </Collapse>

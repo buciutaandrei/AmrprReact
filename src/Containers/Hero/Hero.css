@@ -1,6 +1,6 @@
 .imgSlide {
 	z-index: -1;
-	background: linear-gradient( rgba(64, 64, 64, 0.5), rgba(64, 64, 64, 0.5) ), url("./image1.jpg");
+	background: linear-gradient( rgba(64, 64, 64, 0.5), rgba(64, 64, 64, 0.5) ), url("./image1.jpg") no-repeat center center;
 	background-size: cover;
 	height: 100vh;
 	color: white;
