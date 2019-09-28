@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import Media from '../Media/Media.js'
 import axios from 'axios';
 import {
-  Container, Col, Form,
-  FormGroup, Label, Input,
+  Container,
   Button, Card,
   Modal, ModalHeader, ModalBody, ModalFooter,
 } from 'reactstrap';

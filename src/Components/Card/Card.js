@@ -9,10 +9,10 @@ const Card = ({ titlu, text, imagine}) => {
 
   return (
     <a className='cardLink' href='/'>
-      <div className="card smallCards shadow-5 br3 ma3" style={{width: '20rem'}}>
-        <div className='imageContainer ma3' style={{ backgroundImage: `url(${Background})`, backgroundSize: '300px auto' }}>
+      <div className="card smallCards shadow-5 br3 ma3" style={{width: '19rem'}}>
+        <div className='imageContainer ma1' style={{ backgroundImage: `url(${Background})`, backgroundSize: '300px auto' }}>
         </div>
-        <div className="card-body tc">
+        <div className="card-body tc pa1 ph4">
           <h5 className="card-title ttu">{titlu}</h5>
           <hr />
           <p className="card-text">{text}</p>

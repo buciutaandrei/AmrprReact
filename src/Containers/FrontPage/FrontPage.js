@@ -23,10 +23,11 @@ class FrontPage extends Component {
         axios({
             method: 'get',
             url: 'https://react.amrpr.ro/wp/wp-json/wp/v2/posts',
-            auth: {
-                username: 'admin',
-                password: 'pass1234'
-              },
+            config: {
+                headers: {
+                  'Access-Control-Allow-Origin': '*',
+                }
+            }
             })
             .then(response => response.data)
             .then((data) => {

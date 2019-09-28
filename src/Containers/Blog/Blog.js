@@ -15,7 +15,7 @@ const Blog = ({ parentState, articleSetState, toggleModal }) => {
 	if ( parentState.loadingPosts === false ) {
 
 		return (
-		<Container className='pa3' fluid>
+		<Container className='ph3' fluid>
 			<Card className='ba b--white'>
 
 				{

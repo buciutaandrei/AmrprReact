@@ -1,8 +1,8 @@
 import React from 'react';
 import './Thumbnails.css';
 import 'tachyons';
+import SmallCards from '../../Components/Card/Card.js';
 import { Card } from 'reactstrap';
-import SmallCards from '../../Components/Card/Card.js'
 
 const lista = [
 	{titlu: 'Congrese anuale',
@@ -21,9 +21,8 @@ const lista = [
 
 const Thumbnails = () => {
 	return(
-		<Card className='thumbnailContainer'>
-			<div className='container pa4'>
-			<div className='row justify-content-md-center'>
+		<div className='bigWrapper'>
+			<div className='wrapper'>
 				{ 
 					lista.map((info, i) => {
 						return(
@@ -31,9 +30,14 @@ const Thumbnails = () => {
 							);
 					})
 				}
+				
 			</div>
-			</div>
-		</Card>
+			<iframe 
+				src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Famrpr.ro%2F&tabs=timeline&width=450&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+				width="450" height="500" style={{border: 'none', overflow: 'hidden'}} title='iframeFacebook'
+				scrolling="no" frameBorder="0" allowtransparency="true" allow="encrypted-media">
+			</iframe>
+		</div>
 )}
 
 export default Thumbnails;

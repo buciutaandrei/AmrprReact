@@ -3,7 +3,7 @@ import axios from 'axios';
 import {
   Container, Col, Form,
   FormGroup, Label, Input,
-  Button, Modal, ModalHeader, ModalBody, ModalFooter,
+  Button, Modal, ModalBody, ModalFooter,
 } from 'reactstrap';
 import './Add.css';
 import ReactQuill from 'react-quill';

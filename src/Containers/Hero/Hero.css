@@ -2,8 +2,18 @@
 	z-index: -1;
 	background: linear-gradient( rgba(64, 64, 64, 0.5), rgba(64, 64, 64, 0.5) ), url("./image1.jpg") no-repeat center center;
 	background-size: cover;
-	height: 100vh;
+	height: 70vh;
 	color: white;
+}
+
+.loginForm {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
+
+#address {
+	grid-column: span 2;
 }
 
 .flexCenter {

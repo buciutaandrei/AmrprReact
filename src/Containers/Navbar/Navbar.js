@@ -47,7 +47,7 @@ class Navigation extends React.Component {
 	              </NavItem>
 	              <CAPDropdown />
 	              <NavItem>
-					<NavLink hrf='/'>Link-uri</NavLink>
+					<NavLink href='/'>Link-uri</NavLink>
 	              </NavItem>
 	            </Nav>
 	          </Collapse>

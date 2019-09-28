@@ -1,7 +1,25 @@
-.thumbnailContainer {
+.bigWrapper {
+	position: relative;
 	z-index: 10;
+	background: white;
+	min-height: 500px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.wrapper {	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;	
+}
+
+.iframeFacebook {
+	justify-content: center;
+	align-self: center;
 }
 
 .justify-content-md-center {
-	justify-content: center;
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import './Media.css';
 import { Media } from 'reactstrap';
-import imagine from './congres.jpg'
 
 const MediaItem = ({ titlu, continut, imagine }) => {
 
